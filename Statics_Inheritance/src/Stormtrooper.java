@@ -5,7 +5,7 @@
  * not the object.
  */
 public class Stormtrooper implements Trooper{
-    private static int COUNT = 0;
+
     private int number;
 
     public Stormtrooper(){

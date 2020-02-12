@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e7431dc-f1db-4d84-83e6-0b2f6015dca1" name="Default Changelist" comment="" />
+    <list default="true" id="3e7431dc-f1db-4d84-83e6-0b2f6015dca1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Flametrooper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flametrooper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FlametrooperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FlametrooperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stormtrooper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stormtrooper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Trooper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trooper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,10 +27,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1Xate8wUKJIuApypPu5XZ6sJmCM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -34,6 +46,7 @@
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -61,7 +74,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FlametrooperTest.initializerTest">
+  <component name="RunManager" selected="Application.Driver">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Driver" />
       <module name="Statics_Inheritance" />
@@ -101,8 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FlametrooperTest.initializerTest" />
         <item itemvalue="Application.Driver" />
+        <item itemvalue="JUnit.FlametrooperTest.initializerTest" />
         <item itemvalue="JUnit.StormtrooperTest.attack" />
         <item itemvalue="JUnit.StormtrooperTest.initializer" />
       </list>
@@ -133,6 +146,7 @@
       <workItem from="1581296131770" duration="2570000" />
       <workItem from="1581300035907" duration="321000" />
       <workItem from="1581351693636" duration="373000" />
+      <workItem from="1581475189559" duration="1492000" />
     </task>
     <servers />
   </component>
@@ -144,9 +158,10 @@
       <screen x="0" y="23" width="1920" height="987" />
     </state>
     <state x="597" y="206" key="#Project_Structure/0.23.1920.987/-1680.23.1680.1027@0.23.1920.987" timestamp="1581296137435" />
-    <state x="810" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1581298466942">
-      <screen x="0" y="23" width="1920" height="987" />
+    <state x="810" y="247" key="#com.intellij.ide.util.MemberChooser" timestamp="1581477428442">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="810" y="247" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581477428442" />
     <state x="810" y="257" key="#com.intellij.ide.util.MemberChooser/0.23.1920.987/-1680.23.1680.1027@0.23.1920.987" timestamp="1581298466942" />
     <state width="1307" height="207" key="GridCell.Tab.0.bottom" timestamp="1581298707939">
       <screen x="0" y="23" width="1920" height="987" />
@@ -164,9 +179,10 @@
       <screen x="0" y="23" width="1920" height="987" />
     </state>
     <state width="1307" height="207" key="GridCell.Tab.0.right/0.23.1920.987/-1680.23.1680.1027@0.23.1920.987" timestamp="1581298707939" />
-    <state x="351" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1581354554134">
-      <screen x="0" y="23" width="1680" height="957" />
+    <state x="401" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1581475191752">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="401" y="380" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581475191752" />
     <state x="351" y="373" key="com.intellij.ide.util.TipDialog/0.23.1680.957@0.23.1680.957" timestamp="1581354554134" />
     <state x="696" y="442" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581297843925">
       <screen x="0" y="23" width="1920" height="987" />

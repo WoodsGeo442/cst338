@@ -17,7 +17,7 @@ public class Driver {
          */
         List<Stormtrooper> stormtroopers = new ArrayList<>();
 //      Try uncommenting the line below and see what happens. (remember ctrl+/ or cmd+/ will uncomment/comment things)
-//        List<Stormtrooper> troopersList = new List<>();
+         List<Stormtrooper> troopersList = new List<>();
 
         Stormtrooper fn2187 = new Stormtrooper();
         stormtroopers.add(fn2187);
@@ -41,13 +41,13 @@ public class Driver {
         //Look at the class Stormtrooper. Notice that it implements trooper.
         //Make Flame Trooper implement Trooper as well, then uncomment the following code.
 
-//        for(int i = 0; i < 10; i ++){
-//            if(i%2 != 0){
-//                troopers.add(new Flametrooper());
-//            }else{
-//                troopers.add(new Stormtrooper());
-//            }
-//        }
+        for(int i = 0; i < 10; i ++){
+            if(i%2 != 0){
+                troopers.add(new Flametrooper());
+            }else{
+                troopers.add(new Stormtrooper());
+            }
+        }
 
         for(Trooper t : troopers){
             System.out.println(t);
