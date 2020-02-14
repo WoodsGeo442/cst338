@@ -17,7 +17,7 @@ public class Driver {
          */
         List<Stormtrooper> stormtroopers = new ArrayList<>();
 //      Try uncommenting the line below and see what happens. (remember ctrl+/ or cmd+/ will uncomment/comment things)
-         List<Stormtrooper> troopersList = new List<>();
+//         List<Stormtrooper> troopersList = new List<>();
 
         Stormtrooper fn2187 = new Stormtrooper();
         stormtroopers.add(fn2187);
