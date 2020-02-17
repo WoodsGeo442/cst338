@@ -23,6 +23,18 @@ public class Hangman{
         }
     }
 
+    public static boolean letterCheck(char input, String source, String lines){
+        char[] sourcechars = source.toCharArray();
+        char[] lineschars = lines.toCharArray();
+
+        for(int i = 0; i < sourcechars.length; i++){
+            if(sourcechars[i] == input && lineschars[i] != '_'){
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static void main(String[] args){
         int guessCounter = 4;
 
@@ -40,7 +52,15 @@ public class Hangman{
             System.out.println("\nYou have " + i + " incorrect guesses left.");
             System.out.print("Enter either 1 for guessing or 2 for hint: ");
             choice = scanner.nextInt();
-            if()
+            if(choice == 1){
+                for(int k = 0; k < 100; k++){
+                    System.out.print("Enter your guess: ");
+                    char message = scanner.next().charAt(0);
+                    if(letterCheck(message, answer, copy)){
+
+                    }
+                }
+            }
         }
 
     }
