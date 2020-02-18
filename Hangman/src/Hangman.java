@@ -52,9 +52,27 @@ public class Hangman{
             copy = updater(lineschars, sourcechars, input);
             System.out.println("That's right! " + input + " is in the word.");
         } else {
+            copy = updater(lineschars, sourcechars, input);
             System.out.println("Sorry, " + input + " isn't in the word");
         }
         return copy;
+    }
+
+    public static int correctCheck(char input, String source, String copy){
+        char[] sourcechars = source.toCharArray();
+        char[] lineschars = copy.toCharArray();
+        boolean correct = false;
+
+        for(int i = 0; i < sourcechars.length; i++) {
+            if (sourcechars[i] == input /*&& lineschars[i] == '_'*/) {
+                correct = true;
+            }
+            if(correct == true) {
+                return 1;
+            }
+        }
+        return 0;
+
     }
 
 
@@ -77,6 +95,7 @@ public class Hangman{
             System.out.println("\nYou have " + i + " incorrect guesses left.");
             System.out.print("Enter either 1 for guessing or 2 for hint: ");
             choice = scanner.nextInt();
+
             if(choice == 1){
                 for(int k = 0; k < 100; k++){
                     System.out.print("Enter your guess: ");
@@ -88,6 +107,10 @@ public class Hangman{
                         message = scanner.nextLine();
                     }
                     copy = letterCheck(message.charAt(0), answer, copy);
+                    if(correctCheck(message.charAt(0), answer, copy) == 1){
+                        guessCounter++;
+                    }
+
                     break;
                 }
             }
