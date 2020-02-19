@@ -58,20 +58,16 @@ public class Hangman{
         return copy;
     }
 
-    public static int correctCheck(char input, String source, String copy){
+    public static boolean correctCheck(char input, String source, String copy){
         char[] sourcechars = source.toCharArray();
         char[] lineschars = copy.toCharArray();
-        boolean correct = false;
 
         for(int i = 0; i < sourcechars.length; i++) {
-            if (sourcechars[i] == input /*&& lineschars[i] == '_'*/) {
-                correct = true;
-            }
-            if(correct == true) {
-                return 1;
+            if (sourcechars[i] == input && lineschars[i] == '_') {
+                return true;
             }
         }
-        return 0;
+        return false;
 
     }
 
@@ -107,7 +103,7 @@ public class Hangman{
                         message = scanner.nextLine();
                     }
                     copy = letterCheck(message.charAt(0), answer, copy);
-                    if(correctCheck(message.charAt(0), answer, copy) == 1){
+                    if(correctCheck(message.charAt(0), answer, copy) == true){
                         guessCounter++;
                     }
 
