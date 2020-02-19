@@ -63,12 +63,19 @@ public class Hangman{
         char[] lineschars = copy.toCharArray();
 
         for(int i = 0; i < sourcechars.length; i++) {
-            if (sourcechars[i] == input && lineschars[i] == '_') {
+            if (sourcechars[i] == input) {
                 return true;
             }
         }
         return false;
 
+    }
+
+    public static boolean complete(char input, String copy){
+        char[] lineschars = copy.toCharArray();
+        for(int i = 0; i < lineschars.length; i++){
+            if()
+        }
     }
 
 
@@ -85,6 +92,7 @@ public class Hangman{
         String copy = guessName(answer);
         for(int i = guessCounter; i > 0; i--){
             int choice = 0;
+
 
             System.out.print("\nSo far, the word is: ");
             display(copy);
@@ -104,7 +112,7 @@ public class Hangman{
                     }
                     copy = letterCheck(message.charAt(0), answer, copy);
                     if(correctCheck(message.charAt(0), answer, copy) == true){
-                        guessCounter++;
+                        i++;
                     }
 
                     break;
