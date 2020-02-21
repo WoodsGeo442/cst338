@@ -1,6 +1,11 @@
+/**
+ * Author: Geoffrey Woods
+ * Title: Hangman.java
+ * Date: 2/21/2020
+ * Abstract:
+ */
+
 import java.util.Scanner;
-
-
 
 public class Hangman{
     public static String guessName(String input){
@@ -71,14 +76,19 @@ public class Hangman{
 
     }
 
-    public static boolean complete(char input, String copy){
+    public static boolean complete(String copy){
         char[] lineschars = copy.toCharArray();
         for(int i = 0; i < lineschars.length; i++){
-            if()
+            if(lineschars[i] == '_'){
+                return false;
+            }
         }
+        return true;
     }
 
+    public static giveHint(String source, String copy){
 
+    }
 
     public static void main(String[] args){
         int guessCounter = 4;
@@ -93,13 +103,16 @@ public class Hangman{
         for(int i = guessCounter; i > 0; i--){
             int choice = 0;
 
-
             System.out.print("\nSo far, the word is: ");
             display(copy);
             System.out.println("\nYou have " + i + " incorrect guesses left.");
             System.out.print("Enter either 1 for guessing or 2 for hint: ");
             choice = scanner.nextInt();
-
+//            while(choice != 1 || choice != 2){
+//                System.out.println("Incorrect input.");
+//                System.out.print("Enter either 1 for guessing or 2 for hint: ");
+//                choice = scanner.nextInt();
+//            }
             if(choice == 1){
                 for(int k = 0; k < 100; k++){
                     System.out.print("Enter your guess: ");
@@ -117,6 +130,16 @@ public class Hangman{
 
                     break;
                 }
+            } else if (choice == 2) {
+
+                System.out.print("OK! The hint is ");
+
+                System.out.println("\nBut since you used the hint, you can guess " + i + " more times.\n");
+            }
+            if(complete(copy)){
+                System.out.print("\nCongratulations! The word was ");
+                display(copy);
+                break;
             }
         }
 
