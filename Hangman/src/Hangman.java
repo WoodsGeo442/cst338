@@ -5,6 +5,7 @@
  * Abstract:
  */
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Hangman{
@@ -63,6 +64,24 @@ public class Hangman{
         return copy;
     }
 
+    public static String letterCheck2(char input, String source, String copy){
+        char[] sourcechars = source.toCharArray();
+        char[] lineschars = copy.toCharArray();
+        boolean correct = false;
+
+        for(int i = 0; i < sourcechars.length; i++) {
+            if (sourcechars[i] == input && lineschars[i] == '_') {
+                correct = true;
+            }
+        }
+        if(correct == true){
+            copy = updater(lineschars, sourcechars, input);
+        } else {
+            copy = updater(lineschars, sourcechars, input);
+        }
+        return copy;
+    }
+
     public static boolean correctCheck(char input, String source, String copy){
         char[] sourcechars = source.toCharArray();
         char[] lineschars = copy.toCharArray();
@@ -86,62 +105,89 @@ public class Hangman{
         return true;
     }
 
-    public static giveHint(String source, String copy){
-
+    public static char giveHint(String source, String copy){
+        char[] sourcechars = source.toCharArray();
+        char[] copychars = copy.toCharArray();
+        char error = '$';
+        for(int i = 0; i < sourcechars.length; i++){
+            if(copychars[i] == '_'){
+                char hint = sourcechars[i];
+                return hint;
+            }
+        }
+        return error;
     }
 
     public static void main(String[] args){
         int guessCounter = 4;
         String message;
         String answer;
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("--------- Welcome to Hangman ---------\n");
         System.out.print("Enter a word: ");
         answer = scanner.nextLine();
         String copy = guessName(answer);
-        for(int i = guessCounter; i > 0; i--){
+        for(int i = guessCounter; i > 0; i--) {
             int choice = 0;
 
             System.out.print("\nSo far, the word is: ");
             display(copy);
             System.out.println("\nYou have " + i + " incorrect guesses left.");
             System.out.print("Enter either 1 for guessing or 2 for hint: ");
-            choice = scanner.nextInt();
-//            while(choice != 1 || choice != 2){
-//                System.out.println("Incorrect input.");
-//                System.out.print("Enter either 1 for guessing or 2 for hint: ");
-//                choice = scanner.nextInt();
-//            }
-            if(choice == 1){
-                for(int k = 0; k < 100; k++){
-                    System.out.print("Enter your guess: ");
+
+
+            boolean success = false;
+            do{
+                try{
+                    choice = scanner.nextInt();
                     scanner.nextLine();
+                    if(choice == 1 || choice == 2)
+                        success = true;
+                    else {
+                        System.out.println("Incorrect Input");
+                        System.out.print("Enter either 1 for guessing or 2 for hint: ");
+                    }
+                }
+                catch(InputMismatchException e){
+                    System.out.println("Incorrect Input");
+                    System.out.print("Enter either 1 for guessing or 2 for hint: ");
+                    scanner.nextLine();
+                }
+            }while(!success);
+
+            if (choice == 1) {
+                for (int k = 0; k < 100; k++) {
+                    System.out.print("Enter your guess: ");
                     message = scanner.nextLine();
-                    while(!message.matches("[A-Za-z]")){
+                    while (!message.matches("[A-Za-z]")) {
                         System.out.println("Incorrect input.");
                         System.out.print("Enter your guess: ");
                         message = scanner.nextLine();
                     }
                     copy = letterCheck(message.charAt(0), answer, copy);
-                    if(correctCheck(message.charAt(0), answer, copy) == true){
+                    if (correctCheck(message.charAt(0), answer, copy) == true) {
                         i++;
                     }
 
                     break;
                 }
             } else if (choice == 2) {
-
-                System.out.print("OK! The hint is ");
-
-                System.out.println("\nBut since you used the hint, you can guess " + i + " more times.\n");
+                char hint = giveHint(answer, copy);
+                copy = letterCheck2(hint, answer, copy);
+                System.out.print("OK! The hint is " + hint);
+                System.out.println("\nBut since you used the hint, you can guess " + (i-1) + " more times.\n");
             }
             if(complete(copy)){
                 System.out.print("\nCongratulations! The word was ");
                 display(copy);
                 break;
             }
+
         }
+        System.out.print("\nYou failed. The word was ");
+        display(answer);
 
     }
 }
