@@ -2,11 +2,12 @@
  * Author: Geoffrey Woods
  * Title: Hangman.java
  * Date: 2/21/2020
- * Abstract:
+ * Abstract: This program is meant to function as a game of hangman.  If you guess wrong, you get an incorrect guess taken off, but if you get it right, you keep a guess.  you can ask for a hint, but it will take a guess away.  If an input is not the correct type, you will simply have to retype your input.
  */
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 
 public class Hangman{
     public static String guessName(String input){
@@ -40,23 +41,35 @@ public class Hangman{
     public static void display(String input){
         char[] inputnew = input.toCharArray();
         for(int i = 0; i < inputnew.length; i++){
+            if(inputnew[i] == ' '){
+                inputnew[i] = '#';
+            }
             System.out.print(inputnew[i] + " ");
         }
     }
+
+
 
     public static String letterCheck(char input, String source, String copy){
         char[] sourcechars = source.toCharArray();
         char[] lineschars = copy.toCharArray();
         boolean correct = false;
+        boolean samecheck = false;
 
         for(int i = 0; i < sourcechars.length; i++) {
             if (sourcechars[i] == input && lineschars[i] == '_') {
                 correct = true;
             }
+            if (sourcechars[i] == input && lineschars[i] != '_') {
+                samecheck = true;
+            }
         }
         if(correct == true){
             copy = updater(lineschars, sourcechars, input);
             System.out.println("That's right! " + input + " is in the word.");
+        } else if(samecheck == true){
+            copy = updater(lineschars, sourcechars, input);
+            System.out.println("Not valid input. You already guessed " + input + "." );
         } else {
             copy = updater(lineschars, sourcechars, input);
             System.out.println("Sorry, " + input + " isn't in the word");
@@ -64,7 +77,7 @@ public class Hangman{
         return copy;
     }
 
-    public static String letterCheck2(char input, String source, String copy){
+    public static String hintPrint(char input, String source, String copy){
         char[] sourcechars = source.toCharArray();
         char[] lineschars = copy.toCharArray();
         boolean correct = false;
@@ -84,7 +97,6 @@ public class Hangman{
 
     public static boolean correctCheck(char input, String source, String copy){
         char[] sourcechars = source.toCharArray();
-        char[] lineschars = copy.toCharArray();
 
         for(int i = 0; i < sourcechars.length; i++) {
             if (sourcechars[i] == input) {
@@ -122,6 +134,8 @@ public class Hangman{
         int guessCounter = 4;
         String message;
         String answer;
+        char[] trackguesses = new char[100];
+        int guesses = 0;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -161,12 +175,15 @@ public class Hangman{
                 for (int k = 0; k < 100; k++) {
                     System.out.print("Enter your guess: ");
                     message = scanner.nextLine();
+
                     while (!message.matches("[A-Za-z]")) {
                         System.out.println("Incorrect input.");
                         System.out.print("Enter your guess: ");
                         message = scanner.nextLine();
                     }
                     copy = letterCheck(message.charAt(0), answer, copy);
+                    trackguesses[guesses] = message.charAt(0);
+                    guesses++;
                     if (correctCheck(message.charAt(0), answer, copy) == true) {
                         i++;
                     }
@@ -175,19 +192,20 @@ public class Hangman{
                 }
             } else if (choice == 2) {
                 char hint = giveHint(answer, copy);
-                copy = letterCheck2(hint, answer, copy);
+                copy = hintPrint(hint, answer, copy);
                 System.out.print("OK! The hint is " + hint);
                 System.out.println("\nBut since you used the hint, you can guess " + (i-1) + " more times.\n");
             }
             if(complete(copy)){
                 System.out.print("\nCongratulations! The word was ");
-                display(copy);
+                display(answer);
                 break;
             }
 
         }
-        System.out.print("\nYou failed. The word was ");
-        display(answer);
-
+        if(!complete(copy)){
+            System.out.print("\nYou failed. The word was ");
+            display(answer);
+        }
     }
 }
