@@ -41,26 +41,31 @@ public class School
             }
             //add course
             num = scanner.nextLine();
-            int numInstructors = Integer.parseInt(num);
-            for(int i = 0; i < numInstructors; i++){
+            int numCourses = Integer.parseInt(num);
+            for(int i = 0; i < numCourses; i++){
                 line = scanner.nextLine();
-                instructorLine = line.split(",");
-                Integer instructorID = Integer.parseInt(instructorLine[0]);
-                Instructor newInstructor = new Instructor(instructorLine[1], instructorID, instructorLine[2], instructorLine[3]);
-                Instructors.put(instructorID, newInstructor);
+                courseLine = line.split(",");
+                Integer courseID = Integer.parseInt(courseLine[0]);
+                Integer courseStudents = Integer.parseInt(courseLine[2]);
+                Course newCourse = new Course(courseID, courseLine[1], courseStudents, courseLine[3]);
+                Courses.put(courseID, newCourse);
             }
             //add student
             num = scanner.nextLine();
-            int numInstructors = Integer.parseInt(num);
-            for(int i = 0; i < numInstructors; i++){
+            int numStudents = Integer.parseInt(num);
+            for(int i = 0; i < numStudents; i++){
                 line = scanner.nextLine();
-                instructorLine = line.split(",");
-                Integer instructorID = Integer.parseInt(instructorLine[0]);
-                Instructor newInstructor = new Instructor(instructorLine[1], instructorID, instructorLine[2], instructorLine[3]);
-                Instructors.put(instructorID, newInstructor);
+                studentLine = line.split(",");
+                Integer studentID = Integer.parseInt(studentLine[0]);
+                Student newStudent = new Student(studentID, studentLine[1]);
+                Students.put(studentID, newStudent);
             }
         }
         
+
+    }
+
+    void schoolInfo(){
 
     }
 
@@ -103,10 +108,6 @@ public class School
     }
 
     void deleteCourse(int courseNum){
-
-    }
-
-    void schoolInfo(){
 
     }
 
