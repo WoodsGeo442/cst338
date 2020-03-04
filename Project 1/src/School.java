@@ -62,11 +62,12 @@ public class School
             }
         }
         
-
+        System.out.println("Done!");
     }
 
     void schoolInfo(){
-
+        System.out.println("School Name: " + name);
+        System.out.println("Instructor Information");
     }
 
     void addInstructor(int ID, String name, String email, String phone){
@@ -80,7 +81,8 @@ public class School
     }
 
     void addStudent(int studentID, String studentName){
-
+        Student newStudent = new Student(studentID, studentName);
+        Students.put(studentID, newStudent);
     }
 
     void assignInstructor (int courseNum, int TeacherNum){
@@ -116,7 +118,7 @@ public class School
     }
 
     void getCourse(int courseNum){
-
+        
     }
 
     void getInstructor(int TeacherNum){
