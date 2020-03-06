@@ -1,8 +1,11 @@
+import java.util.ArrayList;
+
 public class Instructor{
     String name;
     int teacherNum;
     String email;
     String teacherPhone;
+    ArrayList<Integer>teachCourses = new ArrayList<>();
 
     public Instructor(String name, int teacherNum, String email, String teacherPhone){
         this.name = name;
@@ -10,6 +13,8 @@ public class Instructor{
         this.email = email;
         this.teacherPhone = teacherPhone;
     }
+
+    
 
     public String getName() {
         return this.name;
@@ -41,6 +46,10 @@ public class Instructor{
 
     public void setTeacherPhone(String teacherPhone) {
         this.teacherPhone = teacherPhone;
+    }
+
+    public void addCourse(int num){
+        teachCourses.add(num);
     }
 
     
