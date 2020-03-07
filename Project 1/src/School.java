@@ -193,9 +193,15 @@ public class School
         } else { 
             System.out.println("Student " + studentID + " does not exist.");
         }
+
         if (studentTruth == true && courseTruth == true){
-            Students.get(studentID).addClass(courseNum);
-            Courses.get(courseNum).addStudent(studentID);
+            if(Courses.get(courseNum).courseFull(courseNum)){
+                System.out.println("Registration failed – Class is full.");
+            } else {
+                Students.get(studentID).addClass(courseNum);
+                Courses.get(courseNum).addStudent(studentID);
+            }
+            
         } 
     }
 
@@ -263,29 +269,46 @@ public class School
     }
 
     void courseInfo(){
-        
-    }
+        System.out.println("Number of Courses: " + Courses.size());
+        for (Course classes : Courses.values()) {
+            System.out.println(classes.getCourseNum()+ ": " + classes.getTotalEnrolled() + " enrolled");
 
-    void deleteCourse(int courseNum){
-        if(Courses.get(
-            courseNum).getTotalEnrolled() == 0){
-                Courses.get(courseNum)
-        } else {
-            System.out.println("Course deletion failed – Enrolled student(s) in the class");
         }
     }
 
-    void getInstructor(int TeacherNum){
+    void deleteCourse(int courseNum){
 
+        if(Courses.containsKey(courseNum)){
+            if(Courses.get(
+            courseNum).getTotalEnrolled() == 0){
+                Courses.remove(courseNum);
+            } else {
+                System.out.println("Course deletion failed – Enrolled student(s) in the class");
+            }
+        } else {
+            System.out.println("Course deletion failed – course does " + courseNum + " does not exist.");
+        }
+        
     }
 
-    void getStudent(int studentID){
+    // String getInstructor(int TeacherNum){
+    //     if(Instructors.containsKey(TeacherNum)){
+    //         System.out.println("Instructor Number: " + Instructors.get(TeacherNum).getTeacherNum());
+    //         System.out.println("Name: " + Instructors.get(TeacherNum).name);
+    //         System.out.println("Courses Teaching: ");
+            
+    //     } else {
+    //         return null;
+    //     }
+    // }
 
-    }
+    // void getStudent(int studentID){
 
-    void graduateStudent(int studentID){
+    // }
 
-    }
+    // void graduateStudent(int studentID){
+
+    // }
 
     
 }

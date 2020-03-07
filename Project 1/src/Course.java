@@ -91,4 +91,17 @@ public class Course{
 		
 	}
 
+	public boolean courseFull(int num){
+		if(getTotalEnrolled() >= getMaxStudents()){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	// public void deleteCourse(int num){
+	// 	instructorID = 0;
+	// 	scoresMap.clear();
+		
+	// }
+
 }

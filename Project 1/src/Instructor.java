@@ -52,5 +52,11 @@ public class Instructor{
         teachCourses.add(num);
     }
 
+    public void getCourses(){
+        for(int i = 0; i < teachCourses.size(); i++){
+
+        }
+    }
+
     
 }

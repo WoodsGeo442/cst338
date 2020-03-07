@@ -9,7 +9,7 @@ public class Student{
 		if(scoresMap.containsKey(ID)){
 			return true;
 		} else{
-			System.out.println("Student " + StudentID + " (" + StudentName + ") is not enrolled in " + ID);
+			System.out.println("Student " + StudentID + " (" + StudentName + ") is not enrolled in " + ID + ".");
 			return false;
 		}
 	}
@@ -46,6 +46,7 @@ public class Student{
 	public void removeStudent(int ID){
 		scoresMap.remove(ID);
 	}
+
 
 
 }
