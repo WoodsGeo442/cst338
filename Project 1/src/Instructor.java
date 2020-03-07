@@ -1,3 +1,8 @@
+//Title: Instructor.java
+//Abstract: This program functions like a school record system and will keep track of classes, teachers and students.
+//Author: Geoffrey Woods
+//3/6/2020
+
 import java.util.ArrayList;
 
 public class Instructor{
@@ -5,7 +10,7 @@ public class Instructor{
     int teacherNum;
     String email;
     String teacherPhone;
-    ArrayList<Integer>teachCourses = new ArrayList<>();
+    private ArrayList<Course> teachCourses = new ArrayList<>();
 
     public Instructor(String name, int teacherNum, String email, String teacherPhone){
         this.name = name;
@@ -48,7 +53,7 @@ public class Instructor{
         this.teacherPhone = teacherPhone;
     }
 
-    public void addCourse(int num){
+    public void addCourse(Course num){
         teachCourses.add(num);
     }
 
@@ -56,6 +61,16 @@ public class Instructor{
         for(int i = 0; i < teachCourses.size(); i++){
 
         }
+    }
+
+    @Override
+    public String toString(){
+        String newString = "";
+        newString += "Instructor Number: " + teacherNum + "\n" + "Name: " + name + "\nCourses Enrolled: \n";
+        for (Course classes: teachCourses) {
+            newString += classes.getCourseNum() + ": " + classes.getTotalEnrolled() + " enrolled" + "\n";
+        }
+        return newString;
     }
 
     

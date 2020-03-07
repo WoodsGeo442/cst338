@@ -1,3 +1,8 @@
+//Title: Course.java
+//Abstract: This program functions like a school record system and will keep track of classes, teachers and students.
+//Author: Geoffrey Woods
+//3/6/2020
+
 import java.util.HashMap;
 
 public class Course{
@@ -98,10 +103,5 @@ public class Course{
 			return false;
 		}
 	}
-	// public void deleteCourse(int num){
-	// 	instructorID = 0;
-	// 	scoresMap.clear();
-		
-	// }
 
 }

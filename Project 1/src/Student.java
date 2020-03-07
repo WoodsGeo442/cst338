@@ -1,3 +1,8 @@
+//Title: Student.java
+//Abstract: This program functions like a school record system and will keep track of classes, teachers and students.
+//Author: Geoffrey Woods
+//3/6/2020
+
 import java.util.HashMap;
 
 public class Student{
@@ -45,6 +50,27 @@ public class Student{
 
 	public void removeStudent(int ID){
 		scoresMap.remove(ID);
+	}
+
+	HashMap<Integer,Double> getScoresMap(){
+		return scoresMap;
+	 }
+
+	@Override
+    public String toString(){
+		String newString = "";
+		double average = 0;
+		int size = 0;
+        newString += "Student Number: " + StudentID +  "\n" + "Name: " + StudentName + "\nCourses Enrolled: \n";
+        for(HashMap.Entry<Integer, Double> course : scoresMap.entrySet()){
+			newString += course.getKey() + ": " + course.getValue() + "\n";
+			average+=course.getValue();
+			size++;
+		}
+		average = average/size;
+		newString += "Course Average: " + average;
+            
+        return newString;
 	}
 
 

@@ -1,6 +1,13 @@
+//Title: School.java
+//Abstract: This program functions like a school record system and will keep track of classes, teachers and students.
+//Author: Geoffrey Woods
+//3/6/2020
+
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class School
@@ -173,7 +180,8 @@ public class School
             System.out.println("Instructor " + TeacherNum + " does not exist.");
         }
         if (teacherTruth == true && courseTruth == true){
-            Instructors.get(TeacherNum).addCourse(courseNum);
+            Course newCourse = Courses.get(courseNum);
+            Instructors.get(TeacherNum).addCourse(newCourse);
             Courses.get(courseNum).setInstructorID(TeacherNum);
         } 
         
@@ -291,24 +299,40 @@ public class School
         
     }
 
-    // String getInstructor(int TeacherNum){
-    //     if(Instructors.containsKey(TeacherNum)){
-    //         System.out.println("Instructor Number: " + Instructors.get(TeacherNum).getTeacherNum());
-    //         System.out.println("Name: " + Instructors.get(TeacherNum).name);
-    //         System.out.println("Courses Teaching: ");
-            
-    //     } else {
-    //         return null;
-    //     }
-    // }
+    Instructor getInstructor(int courseNum){
+        if(Courses.containsKey(courseNum)){
+            Course course = Courses.get(courseNum);
+            int instructorID = course.getInstructorID();
+            return Instructors.get(instructorID);
+        } else{
+            System.out.println("Instructor " + courseNum + " does not exist.");
+            return null;
+        }
+    }
 
-    // void getStudent(int studentID){
+    Student getStudent(int studentID){
+        if(Students.containsKey(studentID)){
+            return Students.get(studentID);
+        } else{
+            return null;
+        }
+    }
 
-    // }
+    void graduateStudent(int studentID){
+        Student specificStudent = getStudent(studentID);
+        HashMap<Integer, Double> randomList = specificStudent.getScoresMap();
 
-    // void graduateStudent(int studentID){
+        Iterator<Integer> courseIter = randomList.keySet().iterator();
 
-    // }
+        while(courseIter.hasNext()){
+            Integer courseId = courseIter.next();
+            Course specificCourse = getCourse(courseId);
+
+            courseIter.remove();
+            specificCourse.removeStudent(studentID);
+        }
+        Students.remove(studentID);
+    }
 
     
 }
