@@ -1,11 +1,20 @@
+package Monsters;
+
+import Abilities.Attack;
+
 import java.util.HashMap;
+import java.util.Random;
 
 public abstract class Monster{
 
-    private Integer maxHP;
-    private Integer xp;
-    private HashMap<String, Integer> items;
     private Integer hp;
+    private Integer xp;
+    Integer agi = 5;
+    Integer def = 5;
+    Integer str = 5;
+    Attack attack;
+    private Integer maxHP;
+    private HashMap<String, Integer> items;
 
     public Integer getMaxHP() {
         return this.maxHP;
@@ -40,6 +49,32 @@ public abstract class Monster{
 
     public void setHp(Integer hp) {
         this.hp = hp;
+    }
+
+    public Integer getAgi() {
+        return agi;
+    }
+
+    public Integer getDef() {
+        return def;
+    }
+
+    public Integer getStr() {
+        return str;
+    }
+
+    public Attack getAttack() {
+        return attack;
+    }
+
+    Integer getAttribute(Integer min, Integer max){
+        Random rand = new Random();
+        if(min > max){
+            Integer temp = min;
+            min = max;
+            max = temp;
+        }
+        return rand.nextInt(max - min) + min;
     }
 
     
