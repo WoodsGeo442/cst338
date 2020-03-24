@@ -32,15 +32,12 @@ public abstract class Monster{
         this.xp = xp;
     }
 
-    public HashMap<String,Integer> getItems()
-
-    {
+    public HashMap<String,Integer> getItems() {
 		return this.items;
 	}
 
-    public void setItems(HashMap<String,Integer>items)
-    {
-		this.items = items;
+    public void setItems(HashMap<String,Integer>items) {
+        this.items = items;
 	}
 
     public Integer getHp() {
@@ -77,10 +74,10 @@ public abstract class Monster{
         return rand.nextInt(max - min) + min;
     }
 
-    
+    public Integer attackTarget(Monster target){
+        return attack.attack(target);
+    }
 
-
-    
     Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items){
         this.maxHP = maxHP;
         hp = this.maxHP;

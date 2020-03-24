@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e42e6f08-69c8-4717-acc6-d07d3faf0566" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_api_5_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CookieMonsterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DragonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonsterMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/junit-platform-console-standalone-1.4.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy1/src/Abilities/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Strategy1/src/Abilities/Attack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy1/src/Abilities/MeleeAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Strategy1/src/Abilities/MeleeAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy1/src/Abilities/RangedAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Strategy1/src/Abilities/RangedAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strategy1/src/Monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Strategy1/src/Monsters/Monster.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/mid$MonsterMaker2.ic" NAME="MonsterMaker2 Coverage Results" MODIFIED="1552336302675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Sec03Done" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1RXA5ScLLyD1303qYCTm6asMWZP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552492483251" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CookieMonsterTest.eat">
+    <configuration name="CookieMonsterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CookieMonsterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CookieMonsterTest.eat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CookieMonsterTest" />
+      <option name="METHOD_NAME" value="eat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DragonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DragonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DragonTest.eat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DragonTest" />
+      <option name="METHOD_NAME" value="eat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DragonTest.flap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mid" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DragonTest" />
+      <option name="METHOD_NAME" value="flap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.DragonTest.eat" />
+      <item itemvalue="JUnit.DragonTest" />
+      <item itemvalue="JUnit.CookieMonsterTest" />
+      <item itemvalue="JUnit.DragonTest.flap" />
+      <item itemvalue="JUnit.CookieMonsterTest.eat" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CookieMonsterTest.eat" />
+        <item itemvalue="JUnit.DragonTest" />
+        <item itemvalue="JUnit.DragonTest.flap" />
+        <item itemvalue="JUnit.DragonTest.eat" />
+        <item itemvalue="JUnit.CookieMonsterTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e42e6f08-69c8-4717-acc6-d07d3faf0566" name="Default Changelist" comment="" />
+      <created>1539807286575</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539807286575</updated>
+      <workItem from="1539807290778" duration="5597000" />
+      <workItem from="1539823414442" duration="493000" />
+      <workItem from="1539824458811" duration="730000" />
+      <workItem from="1539825573742" duration="5010000" />
+      <workItem from="1539835277436" duration="4000" />
+      <workItem from="1540151842770" duration="790000" />
+      <workItem from="1540240468103" duration="3017000" />
+      <workItem from="1540329565664" duration="4138000" />
+      <workItem from="1540416428076" duration="1172000" />
+      <workItem from="1540483144273" duration="1313000" />
+      <workItem from="1541650355371" duration="1001000" />
+      <workItem from="1544491846302" duration="36000" />
+      <workItem from="1552272957429" duration="926000" />
+      <workItem from="1552274821052" duration="1912000" />
+      <workItem from="1552335901919" duration="763000" />
+      <workItem from="1552420999379" duration="1558000" />
+      <workItem from="1552435153227" duration="351000" />
+      <workItem from="1552492232490" duration="293000" />
+      <workItem from="1553559628081" duration="599000" />
+      <workItem from="1564789502350" duration="3370000" />
+      <workItem from="1569803110308" duration="2785000" />
+      <workItem from="1584933841352" duration="2060000" />
+      <workItem from="1584987138394" duration="1213000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1552275059935</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552275059935</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Section01 Done">
+      <created>1552276267449</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552276267449</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cleaned up master">
+      <created>1552276325749</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552276325749</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added some tests, need to add two more.">
+      <created>1552421326474</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552421326474</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Merge branch 'Section01' into combined&#10;&#10;# Conflicts:&#10;#&#9;src/CookieMonster.java&#10;#&#9;src/Dragon.java">
+      <created>1552421436645</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552421436646</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Set for merging. Cleaned out CookieMonster">
+      <created>1552421561287</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552421561287</updated>
+    </task>
+    <task id="LOCAL-00007" summary="All files present. &#10;Dragon Tests incomplete">
+      <created>1552421942375</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552421942375</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Dragon Tests complete.">
+      <created>1552422168957</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552422168957</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Prepared for mid">
+      <created>1552492336296</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1552492336296</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Prepared for mid">
+      <created>1552492475928</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1552492475928</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Section01 Done" />
+    <MESSAGE value="Cleaned up master" />
+    <MESSAGE value="Added some tests, need to add two more." />
+    <MESSAGE value="Merge branch 'Section01' into combined&#10;&#10;# Conflicts:&#10;#&#9;src/CookieMonster.java&#10;#&#9;src/Dragon.java" />
+    <MESSAGE value="Set for merging. Cleaned out CookieMonster" />
+    <MESSAGE value="All files present. &#10;Dragon Tests incomplete" />
+    <MESSAGE value="Dragon Tests complete." />
+    <MESSAGE value="Prepared for mid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepared for mid" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1584935012095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584935012095" />
+    <state x="1291" y="413" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584934083751">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1291" y="413" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584934083751" />
+    <state x="1220" y="279" key="FileChooserDialogImpl" timestamp="1584933966791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584933966791" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MonsterMaker.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>mid</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org.junit.jupiter:junit-jupiter-api:5.4.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
