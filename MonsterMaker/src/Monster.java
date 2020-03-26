@@ -4,7 +4,6 @@ public abstract class Monster {
     protected String name;
     protected String monsterKind;
     private static int monsterCount;
-//    final Boolean test;
 
     Monster(){
         this("Trogdor");
