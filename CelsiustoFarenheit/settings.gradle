@@ -1,0 +1,2 @@
+rootProject.name='Celsius to Farenheit'
+include ':app'
