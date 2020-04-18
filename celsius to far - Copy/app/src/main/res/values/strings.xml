@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">celsius to far</string>
+    <string name="celsius_label">Celsius</string>
+    <string name="farenheit_label">Farenheit</string>
+    <string name="convert_label">Convert!</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Intents</string>
+    <string name="age_label" />
+    <string name="how_old_are_you">How old are you?</string>
+    <string name="submit">Submit</string>
+    <string name="enter_age">Enter age</string>
+
+</resources>
