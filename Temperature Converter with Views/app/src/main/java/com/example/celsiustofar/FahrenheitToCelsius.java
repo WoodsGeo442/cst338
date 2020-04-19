@@ -9,51 +9,48 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class FahrenheitToCelsius extends AppCompatActivity {
 
-    EditText celsiusIn;
+    EditText fahrenheitIn;
     Button convert;
-    TextView convertedValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        celsiusIn = findViewById(R.id.editTextCelsiusIn);
-        convert = findViewById(R.id.buttonCtoF);
-        convertedValue = findViewById(R.id.textViewCtoFValue);
+        setContentView(R.layout.activity_fahrenheit_to_celsius);
+        fahrenheitIn = findViewById(R.id.editTextFahrenheitIn);
+        convert = findViewById(R.id.buttonFtoC);
 
         convert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 double value = 0.0;
-                value = readValue(celsiusIn);
-                value = convertCtoF(value);
-                updateDisplay(convertedValue, value);
+                value = readValue(fahrenheitIn);
+                value = convertFtoC(value);
+                String strDouble = String.format("%.2f", value);
+                updateDisplay(convert, strDouble);
             }
         });
 
         convert.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), FahrenheitToCelsius.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 return false;
             }
         });
     }
 
-    private double convertCtoF(double celsius) {
-        //F = T(C) x 9/5 +32
+    private double convertFtoC(double fahrenheit) {
+        //C = (T(F) − 32) × 5/9
         double temp =0.0;
-        temp = celsius * (9.0/5.0);
-        temp += 32;
-
+        temp = (fahrenheit - 32) * (5.0/9.0);
         return temp;
     }
 
-    private void updateDisplay(TextView display, double value){
-        display.setText(value+"F");
+    private void updateDisplay(TextView display, String value){
+        display.setText(value+"C");
     }
 
 
@@ -67,5 +64,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return value;
     }
-
 }

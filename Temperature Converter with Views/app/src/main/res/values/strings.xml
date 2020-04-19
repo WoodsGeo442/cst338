@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">C to F HW</string>
+    <string name="celsius_label">Celsius</string>
+    <string name="fahrenheit_label">Fahrenheit</string>
+    <string name="convert_label">Convert!</string>
+    <string name="convert_from_fahrenheit_to_celsius">Convert from Fahrenheit to Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="convert_from_celsius_to_fahrenheit">Convert from Celsius to Fahrenheit</string>
+</resources>

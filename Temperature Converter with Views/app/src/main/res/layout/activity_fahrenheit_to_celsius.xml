@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FahrenheitToCelsius">
+
+    <Button
+        android:id="@+id/buttonFtoC"
+        android:layout_width="111dp"
+        android:layout_height="61dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/convert_label"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFahrenheitIn"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/textViewFahrenheitLabel"
+        android:layout_width="219dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/acme"
+        android:text="@string/convert_from_fahrenheit_to_celsius"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFahrenheitIn"
+        android:layout_width="227dp"
+        android:layout_height="52dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/acme"
+        android:hint="@string/fahrenheit"
+        android:inputType="numberDecimal|numberSigned"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFahrenheitLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
